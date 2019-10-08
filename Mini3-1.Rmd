@@ -1,0 +1,111 @@
+---
+title: "Mini HW 3-1: Importing data from csv files"
+author: "Your Name"
+date: "Today's date"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Due Sunday, October 13 @ 11:59pm through Github**
+
+Your next assignment is to practice reading in `.csv` files using the `read_csv()` function.  The `data` folder in this project contains 5 `.csv` data files for you to try to read in and one tab-delimited file for an extra challenge.  
+
+For each file, first try the default options in `read_csv()` to read in the file.  Then make any modifications you might need to address the information I've given you about the file. You should view each imported data set after you're done to be sure it looks right!
+
+First, load the `tidyverse` so you can work with the `readr` package:
+```{r}
+library(tidyverse)
+```
+
+1. `nmesUNPROC.csv` 
+
+This is the unprocessed version of the NMES data that we will work with at a later date.  Click on the file and select "View File" to see what's in the file.  This file is all numeric values, so will read in easily with just the default settings; no modifications needed.
+```{r}
+# with default settings
+myData1 <- read_csv("data/nmesUNPROC.csv")
+
+# view data set
+myData1
+```
+
+2. `Session_5_DI.csv` 
+
+This is the raw clicker data from our chocolate experiment that was eventually processed to provide the data for the Module 3 project.  Click on the file and select "View File" to see what's in the file. All variables are text values but missing values in this file are designated with `NV`.
+```{r}
+# with default settings
+myData2 <- read_csv("data/Session_5_DI.csv")
+myData2
+
+# your modifications if needed
+
+```
+
+
+3. `baltimore.csv` 
+
+This file contains mortality and pollution data daily for Baltimore from 1987 to 2005.  Click on the file and select "View File" to see what's in the file. Be sure to address the missing data and the fact that one of the variables is a date.
+```{r}
+# with default settings
+myData3 <- read_csv("data/baltimore.csv")
+myData3
+
+# your modifications if needed
+
+```
+
+4. `Poverty Rate By State Race - raw_data.csv`
+
+This data gives poverty rates by racial and ethnic groups for each state.  Click on the file and select "View File" to see what's in the file.  Be sure to address the missing values and the fact that there is metadata at the top of the file and footnotes at the bottom of the file.  (Hint: to address the footnotes, try `?read_csv` and consider what the `n_max` option does.) 
+```{r}
+# with default settings
+myData4 <- read_csv("data/Poverty Rate By State Race - raw_data.csv")
+myData4
+
+# your modifications if needed
+
+```
+
+5. `Red_Light_Cameras.csv`
+
+This file gives the locations of all of the red light cameras in Baltimore City (from Open Baltimore [https://data.baltimorecity.gov/Transportation/Red-Light-Cameras/ydjd-febd](website)).  Click on the file and select "View File" to see what's in the file.  Be sure to address the installation date variable to be sure it's designated a date.
+```{r}
+# with default settings
+myData5 <- read_csv("data/Red_Light_Cameras.csv")
+myData5
+
+# your modifications if needed
+
+```
+
+6. `namesUNPROC_tab.txt`
+
+This file is a tab-delimited version of the first file.  Do `?read_tsv` and see if you can figure out how to read in this file with the `read_tsv()` function.
+```{r}
+# your code here
+
+```
+
+For an extra challenge, you could also try to read in this file using the more general `read_delim()` function.
+```{r}
+# your code here
+
+```
+
+___
+
+When you are finished with your assignment, knit your file and submit through Github. To do so, follow the steps below.  (If your document didn't successfully knit, please reach out to me over email at `phbiostats@jhu.edu` so I can help you trouble-shoot the issue.)
+
+* First you need to **commit** the changes you've made to the document.  Click the colorful Git button at the top of the RStudio window and select "Commit" from the menu.
+* In the window that opens, **stage** your changes by clicking the check boxes next to the `Mini0-1.Rmd` and `Mini0-1.html` files.
+* In the "Commit message" box, type a short description of what changes you've made, something like: `Completed assignment`
+* Click the "Commit" button on the bottom right.
+* You'll see a window that will tell you about the changes that you've made.  Click "Close" to close the window.  You've successfully committed! You can close this commit window now.
+* After committing, you must **push** your changes to the repository on Github.  Do this by clicking the colorful Git button again and select "Push Branch".  
+* Again, you'll see a window open that tells you your changes have been pushed!
+* If you want, you can look at your repository on [Github.com](https://github.com/) and should be able to see your changes there!  
+* You've successfully submitted your assignment :)
+
+
