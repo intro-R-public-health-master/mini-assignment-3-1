@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Due Sunday, October 11 @ 11:59pm through Github**
+**Due Monday, October 11 at the end of class through Github**
 
 Your next assignment is to practice reading in `.csv` files using the `read_csv()` function.  The `data` folder in this project contains 5 `.csv` data files for you to try to read in and one tab-delimited file for an extra challenge.  
 
