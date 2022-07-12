@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Due Monday, October 11 at the end of class through Github**
+**Due Thursday October 13 through Github**
 
 Your next assignment is to practice reading in `.csv` files using the `read_csv()` function.  The `data` folder in this project contains 5 `.csv` data files for you to try to read in and one tab-delimited file for an extra challenge.  
 
@@ -33,7 +33,7 @@ myData1
 
 2. `Session_5_DI.csv` 
 
-This is the raw clicker data from last year's PH Biostats chocolate experiment that was eventually processed to provide the data for last year's Module 3 project.  Click on the file and select "View File" to see what's in the file. All variables are text values but missing values in this file are designated with `NV`.
+This is the raw clicker data from a previous year's PH Biostats chocolate experiment that was eventually processed to provide the data for that year's Module 3 project.  Click on the file and select "View File" to see what's in the file. All variables are text values but missing values in this file are designated with `NV`.
 ```{r}
 # with default settings
 myData2 <- read_csv("data/Session_5_DI.csv")
@@ -70,7 +70,7 @@ myData4
 
 5. `Red_Light_Cameras.csv`
 
-This file gives the locations of all of the red light cameras in Baltimore City (from Open Baltimore [https://data.baltimorecity.gov/Transportation/Red-Light-Cameras/ydjd-febd](website)).  Click on the file and select "View File" to see what's in the file.  Be sure to address the installation date variable to be sure it's designated a date.
+This file gives the locations of all of the red light cameras in Baltimore City (from Open Baltimore [website](https://data.baltimorecity.gov/datasets/baltimore::red-light-cameras-1/explore?location=39.318738%2C-76.621100%2C12.64)).  Click on the file and select "View File" to see what's in the file.  Be sure to address the installation date variable to be sure it's designated a date.
 ```{r}
 # with default settings
 myData5 <- read_csv("data/Red_Light_Cameras.csv")
