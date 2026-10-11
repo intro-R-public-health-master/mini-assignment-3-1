@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Due Thursday October 9 through Github**
+**Due Thursday October 15 through Github**
 
 Your next assignment is to practice reading in `.csv` files using the `read_csv()` function.  The `data` folder in this project contains 5 `.csv` data files for you to try to read in and one tab-delimited file for an extra challenge.  
 
@@ -96,7 +96,7 @@ For an extra challenge, you could also try to read in this file using the more g
 
 ___
 
-When you are finished with your assignment, knit your file and submit through Github. To do so, follow the steps below.  (If your document didn't successfully knit, please reach out to me over email at `phbiostats@jhu.edu` so I can help you trouble-shoot the issue.)
+When you are finished with your assignment, knit your file and submit through Github. To do so, follow the steps below.  (If your document didn't successfully knit, please reach out to me over email on Canvas so I can help you trouble-shoot the issue.)
 
 * First you need to **commit** the changes you've made to the document.  Click the colorful Git button at the top of the RStudio window and select "Commit" from the menu.
 * In the window that opens, **stage** your changes by clicking the check boxes next to the `Mini3-1.Rmd` and `Mini3-1.html` files.
